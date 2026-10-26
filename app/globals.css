@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --paper: #f7f5f2;
+  --ink: #3a3a3a;
+  --muted: #777777;
+  --line: #eae7e2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, .38), rgba(247, 245, 242, 0) 28rem),
+    var(--paper);
+  color: var(--ink);
+  font-family: Inter, "Noto Sans JP", "Zen Kaku Gothic New", system-ui, sans-serif;
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #ddd7cf;
+  color: #2d2d2d;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .24em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.page-shell {
+  width: min(100% - 40px, 680px);
+  margin-inline: auto;
+}
+
+.soft-rule {
+  border-color: var(--line);
+}
+
+.quiet-link {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color .45s cubic-bezier(.2,.7,.2,1);
+}
+
+.quiet-link:hover {
+  color: var(--ink);
+}
+
+.fade-in {
+  animation: fade-in .8s cubic-bezier(.2,.7,.2,1) both;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.prose-quiet {
+  color: var(--ink);
+}
+
+.prose-quiet :where(p) {
+  margin-top: 1.65em;
+  margin-bottom: 1.65em;
+  line-height: 2.18;
+}
+
+.prose-quiet :where(h2) {
+  margin-top: 4.5rem;
+  margin-bottom: 1.35rem;
+  font-size: 1.12rem;
+  line-height: 1.95;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.prose-quiet :where(h3) {
+  margin-top: 3.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.prose-quiet :where(blockquote) {
+  margin: 3.5rem 0;
+  padding: 0 0 0 1.25rem;
+  border-left: 1px solid var(--line);
+  color: #68645f;
+  font-style: normal;
+}
+
+.prose-quiet :where(hr) {
+  margin: 4.5rem auto;
+  width: 4rem;
+  border: 0;
+  border-top: 1px solid var(--line);
+}
+
+.vertical-note {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  line-height: 2;
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    width: min(100% - 36px, 680px);
+  }
+
+  .prose-quiet :where(p) {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    line-height: 2.05;
+  }
+
+  .prose-quiet :where(h2) {
+    margin-top: 3.25rem;
+    line-height: 1.85;
+  }
+
+  .vertical-note {
+    writing-mode: horizontal-tb;
+  }
+}

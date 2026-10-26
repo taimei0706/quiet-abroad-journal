@@ -1,0 +1,34 @@
+# 遠くの生活手帖
+
+> 海外で暮らす日本人のための、静かな生活改善と小さな道具の記録。硬水、乾燥、机の上、眠り、日本から届く小さなものを、暮らしの手触りから書いています。
+
+- URL: https://quiet-abroad-journal.vercel.app
+- 言語: 日本語
+- RSS: https://quiet-abroad-journal.vercel.app/rss.xml
+- Sitemap: https://quiet-abroad-journal.vercel.app/sitemap.xml
+
+## 主要ページ
+
+- [ホーム](https://quiet-abroad-journal.vercel.app/): 最新の記録と読みはじめ
+- [記録](https://quiet-abroad-journal.vercel.app/archive): 全記事の一覧
+- [この場所](https://quiet-abroad-journal.vercel.app/about): サイトについて
+
+## カテゴリ
+
+- [手帖](https://quiet-abroad-journal.vercel.app/notes): 部屋、移動、夜、日本のもの
+- [机まわり](https://quiet-abroad-journal.vercel.app/desk): ケーブル、灯り、ノート、作業環境
+- [水と空気](https://quiet-abroad-journal.vercel.app/water): 硬水、乾燥、喉、肌、水あと
+- [海外生活](https://quiet-abroad-journal.vercel.app/abroad): 別の言葉の中で暮らす日常
+- [眠り](https://quiet-abroad-journal.vercel.app/sleep): 寝具、灯り、湿度、夜の習慣
+
+## 代表的な記事
+
+- [朝起きると、喉が痛かったころ](https://quiet-abroad-journal.vercel.app/articles/dry-throat-winter-room)
+- [部屋の鍵を、小さな布ポーチに入れておく](https://quiet-abroad-journal.vercel.app/articles/room-key-in-small-pouch)
+- [小さな台所に、一杯分のドリッパーを置く](https://quiet-abroad-journal.vercel.app/articles/one-cup-dripper-small-kitchen)
+- [硬水の国で、タオルだけを変えた日](https://quiet-abroad-journal.vercel.app/articles/hard-water-towel)
+- [夜、キーボードに布を一枚かける](https://quiet-abroad-journal.vercel.app/articles/keyboard-cloth-at-night)
+
+## 引用について
+
+記事本文を引用する場合は、ページタイトルと URL を明記してください。画像は CC0 ですが、出典は `public/images/CREDITS.md` にまとめています。
