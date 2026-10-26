@@ -1,5 +1,7 @@
 # 遠くの生活手帖
 
+🔗 **Webサイト**: [https://quiet-abroad-journal.vercel.app](https://quiet-abroad-journal.vercel.app)
+
 Next.js App Router、TypeScript、Tailwind CSS、MDX で作った、海外在住の日本人向けの静かな生活手帖サイトです。
 
 主役は商品ではなく、生活の空気、記憶、身体感覚です。Amazon Japan アフィリエイトリンクは記事の中に控えめに置き、ランキングや強い CTA は使いません。
