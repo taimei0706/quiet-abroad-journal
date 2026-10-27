@@ -146,3 +146,29 @@ img {
     writing-mode: horizontal-tb;
   }
 }
+
+/* Google Translate Widget Optimization */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}
+
+.goog-tooltip {
+  display: none !important;
+}
+
+.goog-tooltip:hover {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+#goog-gt-tt {
+  display: none !important;
+}

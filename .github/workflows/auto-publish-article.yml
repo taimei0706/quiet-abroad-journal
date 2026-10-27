@@ -1,0 +1,46 @@
+name: Auto Publish New Article
+
+on:
+  schedule:
+    # 毎週火曜日・金曜日の午前0時UTC（日本時間午前9時）に自動実行
+    - cron: '0 0 * * 2,5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate next article
+        run: node scripts/auto-publish-article.mjs
+
+      - name: Run quality check and build
+        run: |
+          npm run check
+          npm run build
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/articles/
+          if git diff --staged --quiet; then
+            echo "No new article to publish."
+          else
+            git commit -m "feat(content): auto-publish new scheduled article [skip ci]"
+            git push
+          fi
